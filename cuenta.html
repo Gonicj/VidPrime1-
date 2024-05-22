@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VidPrime</title>
+  <link rel="stylesheet" href="./css/cuenta.css" /> <!-- Enlace al archivo CSS externo -->
+  <link rel="shortcut icon" type="img/visualización página/vidprime.jpg " href="img/visualización página/vidprime.jpg"/>
+</head>
+<body>
+  <div class="contenido">
+    <nav>
+     
+    
+
+
+     
+    </nav>
+    <div class="caja">
+      
+      <CENTER>
+        <h2>Iniciar sesión</h2>
+      <img id="logo" src="img/cuenta/VidPrime.jpeg" alt="Logo">  <!-- Agregado el logo -->
+      </CENTER>
+      <div class="form">
+        <input
+          type="text"
+          placeholder="Correo electrónico o número de teléfono"
+          value="71261231" 
+          required
+        />
+        <input type="password" placeholder="Contraseña" value="12345678" required /> <!-- Cambié el placeholder por value -->
+      </div>
+      <button onclick="window.location.href = './Principal.html';">Iniciar sesión</button> <!-- Corregido el atributo onclick -->
+      <div class="checkbox">
+        <div class="recordar">
+          <input type="checkbox" id="checkbox1"/>
+          <label for="remember">Recuérdame</label>
+        </div>
+        <div>
+          <p>¿Necesitas ayuda?</p>
+        </div>
+      </div>
+      <div class="subscripcion">
+        <p>¿Todavía sin VidPrime? <span>Subscríbete ya.</span></p>
+    
+    </div>
+  </div>
+  <footer>
+    <div class="contenedor">
+      <p>¿Problemas al ? 71261231</p>
+      
+      <div class="red-social">
+        <a href="https://www.facebook.com" target="_blank">
+          <img src="img/cuenta/facebook.jpg" alt="Facebook" class="imagen-social">
+          <h4>Facebook </h4>
+        </a>
+      </div>
+      <div class="red-social">
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="img/cuenta/Instegram.jpg" alt="Instagram" class="imagen-social">
+          <h4>Instagram </h4>
+        </a>
+      </div>
+      <div class="red-social">
+        <a href="https://www.tiktok.com" target="_blank">
+          <img src="img/cuenta/3.jpg" alt="TikTok" class="imagen-social">
+          <h4>TikTok </h4>
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    const imagenesSociales = document.querySelectorAll('.imagen-social');
+  
+    imagenesSociales.forEach(imagen => {
+      imagen.addEventListener('mouseenter', () => {
+        imagen.style.transform = 'scale(1.5)'; // Cambia el tamaño al 150% del original
+      });
+  
+      imagen.addEventListener('mouseleave', () => {
+        imagen.style.transform = 'scale(1)'; // Vuelve al tamaño original
+      });
+    });
+  </script>
+  
+  
+ 
+  
